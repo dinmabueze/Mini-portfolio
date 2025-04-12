@@ -1,0 +1,176 @@
+/* Global Styles */
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white; /* Light background for the body */
+    color: #333; /* Dark text color for readability */
+
+    h1 {
+        font-size: 50px;
+        margin: 20px 0;
+    }
+
+    p {
+        font-size: 1.5em;
+        margin: 20px 0; /* Add some margin for spacing */
+    }
+
+    button {
+        padding: 15px;
+        background-color: rgb(240, 19, 122);
+        color: white;
+        font-size: 30px;
+        border: none; /* Use 'none' instead of 'border-style: none;' */
+        border-radius: 15%;
+        transition: background-color 0.4s; /* Specify the property for transition */
+
+        &:hover {
+            background-color: rgb(240, 76, 103);
+        }
+    }
+}
+
+/*-----About Section-----*/
+
+#about h1 {
+    font-size: 80px; /* Increase the font size of the heading */
+    margin-top: 300px;
+}
+
+#about p {
+    font-size: 1.8em; /* Increase the font size of the paragraph */
+    margin-left: 100px;
+    margin-top: 180px;
+    text-align: justify;
+}
+#about p span{
+    color: rgb(235, 19, 91);
+    font-family: serif;
+}
+.image {
+    max-width: 70%; /* Make the image responsive */
+    margin-left: 1200px;
+    margin-top: -400px;
+
+}
+
+/*-----Service Section-----*/
+
+#services h1{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+#services p{
+    font-size: 1.8em;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.icon-list {
+    display: flex;               /* Use flexbox for layout */
+    justify-content: center;     /* Center the items horizontally */
+    list-style: none;           /* Remove default list styling */
+    padding: 0;                 /* Remove default padding */
+}
+
+.icon-list li {
+    margin: 0 10px;            /* Add some space between icons */
+}
+
+.icon-list i {
+    font-size: 35px;           /* Increase the icon size (adjust as needed) */
+    color: #000;               /* Optional: Change the color of the icons */
+    transition: color 0.3s;    /* Optional: Add a transition effect for hover */
+    margin-top: 150px;
+}
+
+.icon-list i:hover {
+    color: #ff00c3;            /* Optional: Change color on hover */
+    font-size: 45px;
+}
+
+.phone{
+    max-width: 8%;
+    margin-left: 500px;
+    margin-top: -1000px;
+}
+.copyright{
+    font-size: 20px;
+}
+
+/* Media query for Phone devices */
+@media only screen and (max-width: 600px) {
+    .flower{
+        max-width: 40%;
+    }
+
+    #about h1{
+        font-size: 80px;
+    }
+
+    #about p{
+        margin: 0 10px;
+        padding: 0;
+        top: 20px;
+        text-align: justify;
+        font-size: 19px;
+    }
+    #about .image{
+        display: none;
+    }
+
+    #services h1{
+        font-size: 50px;
+    }
+    #services p{
+        font-size: 19px;
+        margin: 0;
+        padding: 0;
+    }
+    .phone{
+        display: none;
+    }
+}
+
+/*----Media query for Tablet devices----*/
+@media only screen and (max-width: 1024px){
+    .flower{
+       max-width: 100%; 
+    }
+    #about h1{
+        font-size: 50px;
+    }
+    #about p{
+        margin: 0 20px;
+        padding: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+    #about .image{
+        display: none;
+    }
+
+    #services h1{
+        font-size: 50px;
+    }
+    #services p{
+        font-size: 19px;
+        margin: 0 20px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .phone{
+        display: none;
+    }
+}
